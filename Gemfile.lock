@@ -3,21 +3,28 @@ PATH
   specs:
     rack-monitor (0.1.0)
       rack (~> 2.2.3)
+      thin (~> 1.0.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    daemons (1.4.0)
+    eventmachine (1.2.7)
     minitest (5.14.4)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (10.5.0)
+    thin (1.0.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.0)
+      rack (>= 0.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.17)
+  bundler (~> 2.2.3)
   minitest (~> 5.0)
   rack-monitor!
   rack-test (~> 1.1.0)
