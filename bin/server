@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "rack/monitor"
+
+app = Rack::Builder.new do |builder|
+  builder.use Rack::Monitor
+  builder.run lambda { |env| [200, {}, ["Welcome!"]]}
+end.to_app
+  
+Rack::Server.start(app: app, port: 8080)

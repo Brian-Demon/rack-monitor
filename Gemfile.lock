@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    rack-monitor (0.1.0)
+      rack (~> 2.2.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.14.4)
+    rack (2.2.3)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.17)
+  minitest (~> 5.0)
+  rack-monitor!
+  rack-test (~> 1.1.0)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.17.2
