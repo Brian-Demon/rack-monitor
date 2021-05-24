@@ -5,7 +5,7 @@ require "rack/monitor"
 require "thin"
 
 app = Rack::Builder.new do |builder|
-  builder.use Rack::Monitor
+  builder.use Rack::Monitor, "exceptions.log"
   builder.run lambda { |env| [200, {}, ["Welcome!"]]}
 end.to_app
   
